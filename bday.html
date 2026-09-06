@@ -1,0 +1,3211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pankaj 🧡</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Segoe UI", sans-serif;
+  background:linear-gradient(135deg,#fff3e6,#ffe1d1,#fff8f0);
+  overflow:hidden;
+  color:#633b32;
+}
+
+.slide{
+  display:none;
+  min-height:100vh;
+  width:100%;
+  padding:30px 20px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation:fade .7s ease;
+}
+
+.slide.active{
+  display:flex;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:scale(.96)}
+  to{opacity:1;transform:scale(1)}
+}
+
+h1{
+  font-size:clamp(35px,10vw,65px);
+  color:#d96c4f;
+  text-shadow:0 4px 12px #e8aa923d;
+}
+
+h2{
+  color:#c75b43;
+  margin-bottom:15px;
+}
+
+p{
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* FLOATING BALLOONS */
+.balloon{
+  position:fixed;
+  width:55px;
+  height:68px;
+  border-radius:50%;
+  background:#f39b7b;
+  opacity:.8;
+  animation:float 4s ease-in-out infinite;
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:100px;
+  background:#8c6a60;
+  top:65px;
+  left:50%;
+}
+
+.b1{left:7%;top:15%;animation-delay:.2s}
+.b2{right:8%;top:20%;background:#e9b56f;animation-delay:1s}
+.b3{left:15%;bottom:12%;background:#e98791;animation-delay:1.5s}
+.b4{right:15%;bottom:15%;background:#f1c778;animation-delay:.7s}
+
+@keyframes float{
+  50%{transform:translateY(-20px) rotate(4deg)}
+}
+
+/* TEDDY */
+.teddy{
+  position:relative;
+  width:180px;
+  height:210px;
+  margin:20px auto;
+}
+
+.head{
+  position:absolute;
+  width:125px;
+  height:115px;
+  background:#b97850;
+  border-radius:50%;
+  left:28px;
+  top:25px;
+}
+
+.ear{
+  position:absolute;
+  width:45px;
+  height:45px;
+  background:#a96846;
+  border-radius:50%;
+  top:8px;
+}
+.e1{left:12px}.e2{right:12px}
+
+.eye{
+  position:absolute;
+  width:9px;
+  height:12px;
+  background:#38221d;
+  border-radius:50%;
+  top:62px;
+}
+.eye1{left:55px}.eye2{right:55px}
+
+.muzzle{
+  position:absolute;
+  width:55px;
+  height:40px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:35px;
+  top:73px;
+}
+
+.nose{
+  position:absolute;
+  width:13px;
+  height:9px;
+  background:#4b2921;
+  border-radius:50%;
+  top:84px;
+  left:56px;
+}
+
+.body{
+  position:absolute;
+  width:115px;
+  height:105px;
+  background:#b97850;
+  border-radius:50% 50% 40% 40%;
+  left:32px;
+  top:112px;
+}
+
+.belly{
+  position:absolute;
+  width:70px;
+  height:60px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:22px;
+  top:22px;
+}
+
+.heart{
+  font-size:25px;
+}
+
+/* CALENDAR */
+.calendar{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 35px #a8665426;
+  margin:20px auto;
+}
+
+.month{
+  background:#d96c4f;
+  color:white;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  padding:12px;
+  gap:6px;
+}
+
+.days span{
+  padding:7px 2px;
+  font-size:13px;
+}
+
+.mark{
+  background:#f39b7b;
+  color:white;
+  border-radius:50%;
+  font-weight:bold;
+  box-shadow:0 0 0 4px #ffe0d3;
+}
+
+/* LETTER */
+.letter{
+  max-width:600px;
+  width:94%;
+  max-height:70vh;
+  overflow:auto;
+  background:#fffaf3;
+  padding:30px 25px;
+  border-radius:8px;
+  box-shadow:0 15px 45px #7c493326;
+  border:1px solid #f0d4bd;
+  text-align:left;
+  position:relative;
+}
+
+.letter:before{
+  content:"♥";
+  position:absolute;
+  right:18px;
+  top:12px;
+  color:#e98791;
+  font-size:25px;
+}
+
+.letter h2{
+  text-align:center;
+  font-family:Georgia,serif;
+}
+
+.signature{
+  text-align:right;
+  margin-top:20px;
+  font-family:cursive;
+  color:#c75b43;
+}
+
+/* CAKE */
+.cake{
+  position:relative;
+  width:210px;
+  height:170px;
+  margin:25px auto;
+}
+
+.layer{
+  position:absolute;
+  width:190px;
+  height:55px;
+  left:10px;
+  background:#d98265;
+  border-radius:15px;
+  box-shadow:inset 0 -8px #bd654e;
+}
+
+.l1{bottom:15px}
+.l2{bottom:65px;width:165px;left:22px}
+.l3{bottom:115px;width:135px;left:37px}
+
+.candle{
+  position:absolute;
+  width:12px;
+  height:38px;
+  background:#f3b45f;
+  top:0;
+  left:99px;
+}
+
+.flame{
+  position:absolute;
+  width:18px;
+  height:25px;
+  background:#ffbd59;
+  border-radius:50% 50% 50% 0;
+  transform:rotate(-45deg);
+  top:-25px;
+  left:-3px;
+  box-shadow:0 0 18px #ffb13b;
+}
+
+/* BUTTON */
+button{
+  margin-top:25px;
+  border:none;
+  padding:13px 28px;
+  border-radius:30px;
+  background:#d96c4f;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 8px 20px #b85d4638;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  background:#c75b43;
+}
+
+.dots{
+  position:fixed;
+  bottom:18px;
+  display:flex;
+  gap:8px;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+  background:#d7aaa0;
+  border-radius:50%;
+}
+
+.dot.active{
+  background:#d96c4f;
+  transform:scale(1.3);
+}
+
+.small{
+  font-size:14px;
+  opacity:.8;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BALLOONS -->
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+
+<!-- SLIDE 1 -->
+<section class="slide active" id="slide1">
+
+  <div class="teddy">
+    <div class="ear e1"></div>
+    <div class="ear e2"></div>
+    <div class="head">
+      <div class="eye eye1"></div>
+      <div class="eye eye2"></div>
+      <div class="muzzle"></div>
+      <div class="nose"></div>
+    </div>
+    <div class="body">
+      <div class="belly">🧡</div>
+    </div>
+  </div>
+
+  <h1>Happy Birthday</h1>
+  <h2>Pankaj 🎂</h2>
+
+  <p>
+    A little surprise made<br>
+    especially for you ✨
+  </p>
+
+  <button onclick="nextSlide()">Open Your Surprise 💌</button>
+
+</section>
+
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+
+  <h2>September 8 🗓️</h2>
+
+  <div class="calendar">
+
+    <div class="month">SEPTEMBER 2026</div>
+
+    <div class="days">
+      <span>Su</span><span>Mo</span><span>Tu</span>
+      <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+
+      <span></span><span></span><span>1</span><span>2</span>
+      <span>3</span><span>4</span><span>5</span>
+
+      <span>6</span><span>7</span>
+      <span class="mark">8</span>
+      <span>9</span><span>10</span><span>11</span><span>12</span>
+
+      <span>13</span><span>14</span><span>15</span>
+      <span>16</span><span>17</span><span>18</span><span>19</span>
+
+      <span>20</span><span>21</span><span>22</span>
+      <span>23</span><span>24</span><span>25</span><span>26</span>
+
+      <span>27</span><span>28</span><span>29</span>
+      <span>30</span>
+    </div>
+
+  </div>
+
+  <h1>🎈 🎂 🎈</h1>
+
+  <p>
+    Some dates are just dates...<br>
+    and then there are dates worth remembering. 🧡
+  </p>
+
+  <button onclick="nextSlide()">There's a Letter for You 💌</button>
+
+</section>
+
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+
+  <div class="letter">
+
+    <h2>💌 A Little Birthday Letter</h2>
+
+    <p>
+      Dear Pankaj,
+      <br><br>
+
+      <b>Happy Birthday! 🎂🧡</b>
+      <br><br>
+
+      May God bless you with lots of
+      <b>love, success, happiness and peace.</b>
+      I hope this new year of your life brings
+      you countless reasons to smile and many
+      beautiful moments to remember.
+      <br><br>
+
+      Enjoy your day to the fullest because
+      today is all about <b>you.</b> ✨
+      <br><br>
+
+      And honestly, I hope we remain friends
+      forever. Thank you for being here for me.
+      I truly appreciate your presence.
+      <br><br>
+
+      Even though there is a distance between us,
+      somehow it never really feels that way.
+      It feels like we are much closer than the
+      distance says. And that's something I
+      genuinely value.
+      <br><br>
+
+      So here's to another year of your life,
+      more laughter, more dreams coming true,
+      peaceful days and a heart full of happiness.
+      🌷
+      <br><br>
+
+      Stay the wonderful person you are.
+      <br><br>
+
+      <b>Happy Birthday once again, Pankaj! 🧡</b>
+
+    </p>
+
+    <div class="signature">
+      With lots of good wishes ✨<br>
+      Always stay happy 🌷
+    </div>
+
+  </div>
+
+  <div class="cake">
+    <div class="candle"><div class="flame"></div></div>
+    <div class="layer l3"></div>
+    <div class="layer l2"></div>
+    <div class="layer l1"></div>
+  </div>
+
+  <button onclick="restart()">Replay Surprise ↻</button>
+
+</section>
+
+
+<div class="dots">
+  <div class="dot active"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<script>
+
+let current = 1;
+
+function nextSlide(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current++;
+
+  if(current > 3) current = 1;
+
+  document.getElementById("slide"+current)
+    .classList.add("active");
+
+  updateDots();
+}
+
+function restart(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current = 1;
+
+  document.getElementById("slide1")
+    .classList.add("active");
+
+  updateDots();
+}
+
+function updateDots(){
+
+  document.querySelectorAll(".dot").forEach((dot,index)=>{
+    dot.classList.toggle("active",index === current-1);
+  });
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pankaj 🧡</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Segoe UI", sans-serif;
+  background:linear-gradient(135deg,#fff3e6,#ffe1d1,#fff8f0);
+  overflow:hidden;
+  color:#633b32;
+}
+
+.slide{
+  display:none;
+  min-height:100vh;
+  width:100%;
+  padding:30px 20px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation:fade .7s ease;
+}
+
+.slide.active{
+  display:flex;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:scale(.96)}
+  to{opacity:1;transform:scale(1)}
+}
+
+h1{
+  font-size:clamp(35px,10vw,65px);
+  color:#d96c4f;
+  text-shadow:0 4px 12px #e8aa923d;
+}
+
+h2{
+  color:#c75b43;
+  margin-bottom:15px;
+}
+
+p{
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* FLOATING BALLOONS */
+.balloon{
+  position:fixed;
+  width:55px;
+  height:68px;
+  border-radius:50%;
+  background:#f39b7b;
+  opacity:.8;
+  animation:float 4s ease-in-out infinite;
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:100px;
+  background:#8c6a60;
+  top:65px;
+  left:50%;
+}
+
+.b1{left:7%;top:15%;animation-delay:.2s}
+.b2{right:8%;top:20%;background:#e9b56f;animation-delay:1s}
+.b3{left:15%;bottom:12%;background:#e98791;animation-delay:1.5s}
+.b4{right:15%;bottom:15%;background:#f1c778;animation-delay:.7s}
+
+@keyframes float{
+  50%{transform:translateY(-20px) rotate(4deg)}
+}
+
+/* TEDDY */
+.teddy{
+  position:relative;
+  width:180px;
+  height:210px;
+  margin:20px auto;
+}
+
+.head{
+  position:absolute;
+  width:125px;
+  height:115px;
+  background:#b97850;
+  border-radius:50%;
+  left:28px;
+  top:25px;
+}
+
+.ear{
+  position:absolute;
+  width:45px;
+  height:45px;
+  background:#a96846;
+  border-radius:50%;
+  top:8px;
+}
+.e1{left:12px}.e2{right:12px}
+
+.eye{
+  position:absolute;
+  width:9px;
+  height:12px;
+  background:#38221d;
+  border-radius:50%;
+  top:62px;
+}
+.eye1{left:55px}.eye2{right:55px}
+
+.muzzle{
+  position:absolute;
+  width:55px;
+  height:40px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:35px;
+  top:73px;
+}
+
+.nose{
+  position:absolute;
+  width:13px;
+  height:9px;
+  background:#4b2921;
+  border-radius:50%;
+  top:84px;
+  left:56px;
+}
+
+.body{
+  position:absolute;
+  width:115px;
+  height:105px;
+  background:#b97850;
+  border-radius:50% 50% 40% 40%;
+  left:32px;
+  top:112px;
+}
+
+.belly{
+  position:absolute;
+  width:70px;
+  height:60px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:22px;
+  top:22px;
+}
+
+.heart{
+  font-size:25px;
+}
+
+/* CALENDAR */
+.calendar{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 35px #a8665426;
+  margin:20px auto;
+}
+
+.month{
+  background:#d96c4f;
+  color:white;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  padding:12px;
+  gap:6px;
+}
+
+.days span{
+  padding:7px 2px;
+  font-size:13px;
+}
+
+.mark{
+  background:#f39b7b;
+  color:white;
+  border-radius:50%;
+  font-weight:bold;
+  box-shadow:0 0 0 4px #ffe0d3;
+}
+
+/* LETTER */
+.letter{
+  max-width:600px;
+  width:94%;
+  max-height:70vh;
+  overflow:auto;
+  background:#fffaf3;
+  padding:30px 25px;
+  border-radius:8px;
+  box-shadow:0 15px 45px #7c493326;
+  border:1px solid #f0d4bd;
+  text-align:left;
+  position:relative;
+}
+
+.letter:before{
+  content:"♥";
+  position:absolute;
+  right:18px;
+  top:12px;
+  color:#e98791;
+  font-size:25px;
+}
+
+.letter h2{
+  text-align:center;
+  font-family:Georgia,serif;
+}
+
+.signature{
+  text-align:right;
+  margin-top:20px;
+  font-family:cursive;
+  color:#c75b43;
+}
+
+/* CAKE */
+.cake{
+  position:relative;
+  width:210px;
+  height:170px;
+  margin:25px auto;
+}
+
+.layer{
+  position:absolute;
+  width:190px;
+  height:55px;
+  left:10px;
+  background:#d98265;
+  border-radius:15px;
+  box-shadow:inset 0 -8px #bd654e;
+}
+
+.l1{bottom:15px}
+.l2{bottom:65px;width:165px;left:22px}
+.l3{bottom:115px;width:135px;left:37px}
+
+.candle{
+  position:absolute;
+  width:12px;
+  height:38px;
+  background:#f3b45f;
+  top:0;
+  left:99px;
+}
+
+.flame{
+  position:absolute;
+  width:18px;
+  height:25px;
+  background:#ffbd59;
+  border-radius:50% 50% 50% 0;
+  transform:rotate(-45deg);
+  top:-25px;
+  left:-3px;
+  box-shadow:0 0 18px #ffb13b;
+}
+
+/* BUTTON */
+button{
+  margin-top:25px;
+  border:none;
+  padding:13px 28px;
+  border-radius:30px;
+  background:#d96c4f;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 8px 20px #b85d4638;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  background:#c75b43;
+}
+
+.dots{
+  position:fixed;
+  bottom:18px;
+  display:flex;
+  gap:8px;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+  background:#d7aaa0;
+  border-radius:50%;
+}
+
+.dot.active{
+  background:#d96c4f;
+  transform:scale(1.3);
+}
+
+.small{
+  font-size:14px;
+  opacity:.8;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BALLOONS -->
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+
+<!-- SLIDE 1 -->
+<section class="slide active" id="slide1">
+
+  <div class="teddy">
+    <div class="ear e1"></div>
+    <div class="ear e2"></div>
+    <div class="head">
+      <div class="eye eye1"></div>
+      <div class="eye eye2"></div>
+      <div class="muzzle"></div>
+      <div class="nose"></div>
+    </div>
+    <div class="body">
+      <div class="belly">🧡</div>
+    </div>
+  </div>
+
+  <h1>Happy Birthday</h1>
+  <h2>Pankaj 🎂</h2>
+
+  <p>
+    A little surprise made<br>
+    especially for you ✨
+  </p>
+
+  <button onclick="nextSlide()">Open Your Surprise 💌</button>
+
+</section>
+
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+
+  <h2>September 8 🗓️</h2>
+
+  <div class="calendar">
+
+    <div class="month">SEPTEMBER 2026</div>
+
+    <div class="days">
+      <span>Su</span><span>Mo</span><span>Tu</span>
+      <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+
+      <span></span><span></span><span>1</span><span>2</span>
+      <span>3</span><span>4</span><span>5</span>
+
+      <span>6</span><span>7</span>
+      <span class="mark">8</span>
+      <span>9</span><span>10</span><span>11</span><span>12</span>
+
+      <span>13</span><span>14</span><span>15</span>
+      <span>16</span><span>17</span><span>18</span><span>19</span>
+
+      <span>20</span><span>21</span><span>22</span>
+      <span>23</span><span>24</span><span>25</span><span>26</span>
+
+      <span>27</span><span>28</span><span>29</span>
+      <span>30</span>
+    </div>
+
+  </div>
+
+  <h1>🎈 🎂 🎈</h1>
+
+  <p>
+    Some dates are just dates...<br>
+    and then there are dates worth remembering. 🧡
+  </p>
+
+  <button onclick="nextSlide()">There's a Letter for You 💌</button>
+
+</section>
+
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+
+  <div class="letter">
+
+    <h2>💌 A Little Birthday Letter</h2>
+
+    <p>
+      Dear Pankaj,
+      <br><br>
+
+      <b>Happy Birthday! 🎂🧡</b>
+      <br><br>
+
+      May God bless you with lots of
+      <b>love, success, happiness and peace.</b>
+      I hope this new year of your life brings
+      you countless reasons to smile and many
+      beautiful moments to remember.
+      <br><br>
+
+      Enjoy your day to the fullest because
+      today is all about <b>you.</b> ✨
+      <br><br>
+
+      And honestly, I hope we remain friends
+      forever. Thank you for being here for me.
+      I truly appreciate your presence.
+      <br><br>
+
+      Even though there is a distance between us,
+      somehow it never really feels that way.
+      It feels like we are much closer than the
+      distance says. And that's something I
+      genuinely value.
+      <br><br>
+
+      So here's to another year of your life,
+      more laughter, more dreams coming true,
+      peaceful days and a heart full of happiness.
+      🌷
+      <br><br>
+
+      Stay the wonderful person you are.
+      <br><br>
+
+      <b>Happy Birthday once again, Pankaj! 🧡</b>
+
+    </p>
+
+    <div class="signature">
+      With lots of good wishes ✨<br>
+      Always stay happy 🌷
+    </div>
+
+  </div>
+
+  <div class="cake">
+    <div class="candle"><div class="flame"></div></div>
+    <div class="layer l3"></div>
+    <div class="layer l2"></div>
+    <div class="layer l1"></div>
+  </div>
+
+  <button onclick="restart()">Replay Surprise ↻</button>
+
+</section>
+
+
+<div class="dots">
+  <div class="dot active"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<script>
+
+let current = 1;
+
+function nextSlide(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current++;
+
+  if(current > 3) current = 1;
+
+  document.getElementById("slide"+current)
+    .classList.add("active");
+
+  updateDots();
+}
+
+function restart(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current = 1;
+
+  document.getElementById("slide1")
+    .classList.add("active");
+
+  updateDots();
+}
+
+function updateDots(){
+
+  document.querySelectorAll(".dot").forEach((dot,index)=>{
+    dot.classList.toggle("active",index === current-1);
+  });
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pankaj 🧡</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Segoe UI", sans-serif;
+  background:linear-gradient(135deg,#fff3e6,#ffe1d1,#fff8f0);
+  overflow:hidden;
+  color:#633b32;
+}
+
+.slide{
+  display:none;
+  min-height:100vh;
+  width:100%;
+  padding:30px 20px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation:fade .7s ease;
+}
+
+.slide.active{
+  display:flex;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:scale(.96)}
+  to{opacity:1;transform:scale(1)}
+}
+
+h1{
+  font-size:clamp(35px,10vw,65px);
+  color:#d96c4f;
+  text-shadow:0 4px 12px #e8aa923d;
+}
+
+h2{
+  color:#c75b43;
+  margin-bottom:15px;
+}
+
+p{
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* FLOATING BALLOONS */
+.balloon{
+  position:fixed;
+  width:55px;
+  height:68px;
+  border-radius:50%;
+  background:#f39b7b;
+  opacity:.8;
+  animation:float 4s ease-in-out infinite;
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:100px;
+  background:#8c6a60;
+  top:65px;
+  left:50%;
+}
+
+.b1{left:7%;top:15%;animation-delay:.2s}
+.b2{right:8%;top:20%;background:#e9b56f;animation-delay:1s}
+.b3{left:15%;bottom:12%;background:#e98791;animation-delay:1.5s}
+.b4{right:15%;bottom:15%;background:#f1c778;animation-delay:.7s}
+
+@keyframes float{
+  50%{transform:translateY(-20px) rotate(4deg)}
+}
+
+/* TEDDY */
+.teddy{
+  position:relative;
+  width:180px;
+  height:210px;
+  margin:20px auto;
+}
+
+.head{
+  position:absolute;
+  width:125px;
+  height:115px;
+  background:#b97850;
+  border-radius:50%;
+  left:28px;
+  top:25px;
+}
+
+.ear{
+  position:absolute;
+  width:45px;
+  height:45px;
+  background:#a96846;
+  border-radius:50%;
+  top:8px;
+}
+.e1{left:12px}.e2{right:12px}
+
+.eye{
+  position:absolute;
+  width:9px;
+  height:12px;
+  background:#38221d;
+  border-radius:50%;
+  top:62px;
+}
+.eye1{left:55px}.eye2{right:55px}
+
+.muzzle{
+  position:absolute;
+  width:55px;
+  height:40px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:35px;
+  top:73px;
+}
+
+.nose{
+  position:absolute;
+  width:13px;
+  height:9px;
+  background:#4b2921;
+  border-radius:50%;
+  top:84px;
+  left:56px;
+}
+
+.body{
+  position:absolute;
+  width:115px;
+  height:105px;
+  background:#b97850;
+  border-radius:50% 50% 40% 40%;
+  left:32px;
+  top:112px;
+}
+
+.belly{
+  position:absolute;
+  width:70px;
+  height:60px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:22px;
+  top:22px;
+}
+
+.heart{
+  font-size:25px;
+}
+
+/* CALENDAR */
+.calendar{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 35px #a8665426;
+  margin:20px auto;
+}
+
+.month{
+  background:#d96c4f;
+  color:white;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  padding:12px;
+  gap:6px;
+}
+
+.days span{
+  padding:7px 2px;
+  font-size:13px;
+}
+
+.mark{
+  background:#f39b7b;
+  color:white;
+  border-radius:50%;
+  font-weight:bold;
+  box-shadow:0 0 0 4px #ffe0d3;
+}
+
+/* LETTER */
+.letter{
+  max-width:600px;
+  width:94%;
+  max-height:70vh;
+  overflow:auto;
+  background:#fffaf3;
+  padding:30px 25px;
+  border-radius:8px;
+  box-shadow:0 15px 45px #7c493326;
+  border:1px solid #f0d4bd;
+  text-align:left;
+  position:relative;
+}
+
+.letter:before{
+  content:"♥";
+  position:absolute;
+  right:18px;
+  top:12px;
+  color:#e98791;
+  font-size:25px;
+}
+
+.letter h2{
+  text-align:center;
+  font-family:Georgia,serif;
+}
+
+.signature{
+  text-align:right;
+  margin-top:20px;
+  font-family:cursive;
+  color:#c75b43;
+}
+
+/* CAKE */
+.cake{
+  position:relative;
+  width:210px;
+  height:170px;
+  margin:25px auto;
+}
+
+.layer{
+  position:absolute;
+  width:190px;
+  height:55px;
+  left:10px;
+  background:#d98265;
+  border-radius:15px;
+  box-shadow:inset 0 -8px #bd654e;
+}
+
+.l1{bottom:15px}
+.l2{bottom:65px;width:165px;left:22px}
+.l3{bottom:115px;width:135px;left:37px}
+
+.candle{
+  position:absolute;
+  width:12px;
+  height:38px;
+  background:#f3b45f;
+  top:0;
+  left:99px;
+}
+
+.flame{
+  position:absolute;
+  width:18px;
+  height:25px;
+  background:#ffbd59;
+  border-radius:50% 50% 50% 0;
+  transform:rotate(-45deg);
+  top:-25px;
+  left:-3px;
+  box-shadow:0 0 18px #ffb13b;
+}
+
+/* BUTTON */
+button{
+  margin-top:25px;
+  border:none;
+  padding:13px 28px;
+  border-radius:30px;
+  background:#d96c4f;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 8px 20px #b85d4638;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  background:#c75b43;
+}
+
+.dots{
+  position:fixed;
+  bottom:18px;
+  display:flex;
+  gap:8px;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+  background:#d7aaa0;
+  border-radius:50%;
+}
+
+.dot.active{
+  background:#d96c4f;
+  transform:scale(1.3);
+}
+
+.small{
+  font-size:14px;
+  opacity:.8;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BALLOONS -->
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+
+<!-- SLIDE 1 -->
+<section class="slide active" id="slide1">
+
+  <div class="teddy">
+    <div class="ear e1"></div>
+    <div class="ear e2"></div>
+    <div class="head">
+      <div class="eye eye1"></div>
+      <div class="eye eye2"></div>
+      <div class="muzzle"></div>
+      <div class="nose"></div>
+    </div>
+    <div class="body">
+      <div class="belly">🧡</div>
+    </div>
+  </div>
+
+  <h1>Happy Birthday</h1>
+  <h2>Pankaj 🎂</h2>
+
+  <p>
+    A little surprise made<br>
+    especially for you ✨
+  </p>
+
+  <button onclick="nextSlide()">Open Your Surprise 💌</button>
+
+</section>
+
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+
+  <h2>September 8 🗓️</h2>
+
+  <div class="calendar">
+
+    <div class="month">SEPTEMBER 2026</div>
+
+    <div class="days">
+      <span>Su</span><span>Mo</span><span>Tu</span>
+      <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+
+      <span></span><span></span><span>1</span><span>2</span>
+      <span>3</span><span>4</span><span>5</span>
+
+      <span>6</span><span>7</span>
+      <span class="mark">8</span>
+      <span>9</span><span>10</span><span>11</span><span>12</span>
+
+      <span>13</span><span>14</span><span>15</span>
+      <span>16</span><span>17</span><span>18</span><span>19</span>
+
+      <span>20</span><span>21</span><span>22</span>
+      <span>23</span><span>24</span><span>25</span><span>26</span>
+
+      <span>27</span><span>28</span><span>29</span>
+      <span>30</span>
+    </div>
+
+  </div>
+
+  <h1>🎈 🎂 🎈</h1>
+
+  <p>
+    Some dates are just dates...<br>
+    and then there are dates worth remembering. 🧡
+  </p>
+
+  <button onclick="nextSlide()">There's a Letter for You 💌</button>
+
+</section>
+
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+
+  <div class="letter">
+
+    <h2>💌 A Little Birthday Letter</h2>
+
+    <p>
+      Dear Pankaj,
+      <br><br>
+
+      <b>Happy Birthday! 🎂🧡</b>
+      <br><br>
+
+      May God bless you with lots of
+      <b>love, success, happiness and peace.</b>
+      I hope this new year of your life brings
+      you countless reasons to smile and many
+      beautiful moments to remember.
+      <br><br>
+
+      Enjoy your day to the fullest because
+      today is all about <b>you.</b> ✨
+      <br><br>
+
+      And honestly, I hope we remain friends
+      forever. Thank you for being here for me.
+      I truly appreciate your presence.
+      <br><br>
+
+      Even though there is a distance between us,
+      somehow it never really feels that way.
+      It feels like we are much closer than the
+      distance says. And that's something I
+      genuinely value.
+      <br><br>
+
+      So here's to another year of your life,
+      more laughter, more dreams coming true,
+      peaceful days and a heart full of happiness.
+      🌷
+      <br><br>
+
+      Stay the wonderful person you are.
+      <br><br>
+
+      <b>Happy Birthday once again, Pankaj! 🧡</b>
+
+    </p>
+
+    <div class="signature">
+      With lots of good wishes ✨<br>
+      Always stay happy 🌷
+    </div>
+
+  </div>
+
+  <div class="cake">
+    <div class="candle"><div class="flame"></div></div>
+    <div class="layer l3"></div>
+    <div class="layer l2"></div>
+    <div class="layer l1"></div>
+  </div>
+
+  <button onclick="restart()">Replay Surprise ↻</button>
+
+</section>
+
+
+<div class="dots">
+  <div class="dot active"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<script>
+
+let current = 1;
+
+function nextSlide(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current++;
+
+  if(current > 3) current = 1;
+
+  document.getElementById("slide"+current)
+    .classList.add("active");
+
+  updateDots();
+}
+
+function restart(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current = 1;
+
+  document.getElementById("slide1")
+    .classList.add("active");
+
+  updateDots();
+}
+
+function updateDots(){
+
+  document.querySelectorAll(".dot").forEach((dot,index)=>{
+    dot.classList.toggle("active",index === current-1);
+  });
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pankaj 🧡</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Segoe UI", sans-serif;
+  background:linear-gradient(135deg,#fff3e6,#ffe1d1,#fff8f0);
+  overflow:hidden;
+  color:#633b32;
+}
+
+.slide{
+  display:none;
+  min-height:100vh;
+  width:100%;
+  padding:30px 20px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation:fade .7s ease;
+}
+
+.slide.active{
+  display:flex;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:scale(.96)}
+  to{opacity:1;transform:scale(1)}
+}
+
+h1{
+  font-size:clamp(35px,10vw,65px);
+  color:#d96c4f;
+  text-shadow:0 4px 12px #e8aa923d;
+}
+
+h2{
+  color:#c75b43;
+  margin-bottom:15px;
+}
+
+p{
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* FLOATING BALLOONS */
+.balloon{
+  position:fixed;
+  width:55px;
+  height:68px;
+  border-radius:50%;
+  background:#f39b7b;
+  opacity:.8;
+  animation:float 4s ease-in-out infinite;
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:100px;
+  background:#8c6a60;
+  top:65px;
+  left:50%;
+}
+
+.b1{left:7%;top:15%;animation-delay:.2s}
+.b2{right:8%;top:20%;background:#e9b56f;animation-delay:1s}
+.b3{left:15%;bottom:12%;background:#e98791;animation-delay:1.5s}
+.b4{right:15%;bottom:15%;background:#f1c778;animation-delay:.7s}
+
+@keyframes float{
+  50%{transform:translateY(-20px) rotate(4deg)}
+}
+
+/* TEDDY */
+.teddy{
+  position:relative;
+  width:180px;
+  height:210px;
+  margin:20px auto;
+}
+
+.head{
+  position:absolute;
+  width:125px;
+  height:115px;
+  background:#b97850;
+  border-radius:50%;
+  left:28px;
+  top:25px;
+}
+
+.ear{
+  position:absolute;
+  width:45px;
+  height:45px;
+  background:#a96846;
+  border-radius:50%;
+  top:8px;
+}
+.e1{left:12px}.e2{right:12px}
+
+.eye{
+  position:absolute;
+  width:9px;
+  height:12px;
+  background:#38221d;
+  border-radius:50%;
+  top:62px;
+}
+.eye1{left:55px}.eye2{right:55px}
+
+.muzzle{
+  position:absolute;
+  width:55px;
+  height:40px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:35px;
+  top:73px;
+}
+
+.nose{
+  position:absolute;
+  width:13px;
+  height:9px;
+  background:#4b2921;
+  border-radius:50%;
+  top:84px;
+  left:56px;
+}
+
+.body{
+  position:absolute;
+  width:115px;
+  height:105px;
+  background:#b97850;
+  border-radius:50% 50% 40% 40%;
+  left:32px;
+  top:112px;
+}
+
+.belly{
+  position:absolute;
+  width:70px;
+  height:60px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:22px;
+  top:22px;
+}
+
+.heart{
+  font-size:25px;
+}
+
+/* CALENDAR */
+.calendar{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 35px #a8665426;
+  margin:20px auto;
+}
+
+.month{
+  background:#d96c4f;
+  color:white;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  padding:12px;
+  gap:6px;
+}
+
+.days span{
+  padding:7px 2px;
+  font-size:13px;
+}
+
+.mark{
+  background:#f39b7b;
+  color:white;
+  border-radius:50%;
+  font-weight:bold;
+  box-shadow:0 0 0 4px #ffe0d3;
+}
+
+/* LETTER */
+.letter{
+  max-width:600px;
+  width:94%;
+  max-height:70vh;
+  overflow:auto;
+  background:#fffaf3;
+  padding:30px 25px;
+  border-radius:8px;
+  box-shadow:0 15px 45px #7c493326;
+  border:1px solid #f0d4bd;
+  text-align:left;
+  position:relative;
+}
+
+.letter:before{
+  content:"♥";
+  position:absolute;
+  right:18px;
+  top:12px;
+  color:#e98791;
+  font-size:25px;
+}
+
+.letter h2{
+  text-align:center;
+  font-family:Georgia,serif;
+}
+
+.signature{
+  text-align:right;
+  margin-top:20px;
+  font-family:cursive;
+  color:#c75b43;
+}
+
+/* CAKE */
+.cake{
+  position:relative;
+  width:210px;
+  height:170px;
+  margin:25px auto;
+}
+
+.layer{
+  position:absolute;
+  width:190px;
+  height:55px;
+  left:10px;
+  background:#d98265;
+  border-radius:15px;
+  box-shadow:inset 0 -8px #bd654e;
+}
+
+.l1{bottom:15px}
+.l2{bottom:65px;width:165px;left:22px}
+.l3{bottom:115px;width:135px;left:37px}
+
+.candle{
+  position:absolute;
+  width:12px;
+  height:38px;
+  background:#f3b45f;
+  top:0;
+  left:99px;
+}
+
+.flame{
+  position:absolute;
+  width:18px;
+  height:25px;
+  background:#ffbd59;
+  border-radius:50% 50% 50% 0;
+  transform:rotate(-45deg);
+  top:-25px;
+  left:-3px;
+  box-shadow:0 0 18px #ffb13b;
+}
+
+/* BUTTON */
+button{
+  margin-top:25px;
+  border:none;
+  padding:13px 28px;
+  border-radius:30px;
+  background:#d96c4f;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 8px 20px #b85d4638;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  background:#c75b43;
+}
+
+.dots{
+  position:fixed;
+  bottom:18px;
+  display:flex;
+  gap:8px;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+  background:#d7aaa0;
+  border-radius:50%;
+}
+
+.dot.active{
+  background:#d96c4f;
+  transform:scale(1.3);
+}
+
+.small{
+  font-size:14px;
+  opacity:.8;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BALLOONS -->
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+
+<!-- SLIDE 1 -->
+<section class="slide active" id="slide1">
+
+  <div class="teddy">
+    <div class="ear e1"></div>
+    <div class="ear e2"></div>
+    <div class="head">
+      <div class="eye eye1"></div>
+      <div class="eye eye2"></div>
+      <div class="muzzle"></div>
+      <div class="nose"></div>
+    </div>
+    <div class="body">
+      <div class="belly">🧡</div>
+    </div>
+  </div>
+
+  <h1>Happy Birthday</h1>
+  <h2>Pankaj 🎂</h2>
+
+  <p>
+    A little surprise made<br>
+    especially for you ✨
+  </p>
+
+  <button onclick="nextSlide()">Open Your Surprise 💌</button>
+
+</section>
+
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+
+  <h2>September 8 🗓️</h2>
+
+  <div class="calendar">
+
+    <div class="month">SEPTEMBER 2026</div>
+
+    <div class="days">
+      <span>Su</span><span>Mo</span><span>Tu</span>
+      <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+
+      <span></span><span></span><span>1</span><span>2</span>
+      <span>3</span><span>4</span><span>5</span>
+
+      <span>6</span><span>7</span>
+      <span class="mark">8</span>
+      <span>9</span><span>10</span><span>11</span><span>12</span>
+
+      <span>13</span><span>14</span><span>15</span>
+      <span>16</span><span>17</span><span>18</span><span>19</span>
+
+      <span>20</span><span>21</span><span>22</span>
+      <span>23</span><span>24</span><span>25</span><span>26</span>
+
+      <span>27</span><span>28</span><span>29</span>
+      <span>30</span>
+    </div>
+
+  </div>
+
+  <h1>🎈 🎂 🎈</h1>
+
+  <p>
+    Some dates are just dates...<br>
+    and then there are dates worth remembering. 🧡
+  </p>
+
+  <button onclick="nextSlide()">There's a Letter for You 💌</button>
+
+</section>
+
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+
+  <div class="letter">
+
+    <h2>💌 A Little Birthday Letter</h2>
+
+    <p>
+      Dear Pankaj,
+      <br><br>
+
+      <b>Happy Birthday! 🎂🧡</b>
+      <br><br>
+
+      May God bless you with lots of
+      <b>love, success, happiness and peace.</b>
+      I hope this new year of your life brings
+      you countless reasons to smile and many
+      beautiful moments to remember.
+      <br><br>
+
+      Enjoy your day to the fullest because
+      today is all about <b>you.</b> ✨
+      <br><br>
+
+      And honestly, I hope we remain friends
+      forever. Thank you for being here for me.
+      I truly appreciate your presence.
+      <br><br>
+
+      Even though there is a distance between us,
+      somehow it never really feels that way.
+      It feels like we are much closer than the
+      distance says. And that's something I
+      genuinely value.
+      <br><br>
+
+      So here's to another year of your life,
+      more laughter, more dreams coming true,
+      peaceful days and a heart full of happiness.
+      🌷
+      <br><br>
+
+      Stay the wonderful person you are.
+      <br><br>
+
+      <b>Happy Birthday once again, Pankaj! 🧡</b>
+
+    </p>
+
+    <div class="signature">
+      With lots of good wishes ✨<br>
+      Always stay happy 🌷
+    </div>
+
+  </div>
+
+  <div class="cake">
+    <div class="candle"><div class="flame"></div></div>
+    <div class="layer l3"></div>
+    <div class="layer l2"></div>
+    <div class="layer l1"></div>
+  </div>
+
+  <button onclick="restart()">Replay Surprise ↻</button>
+
+</section>
+
+
+<div class="dots">
+  <div class="dot active"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<script>
+
+let current = 1;
+
+function nextSlide(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current++;
+
+  if(current > 3) current = 1;
+
+  document.getElementById("slide"+current)
+    .classList.add("active");
+
+  updateDots();
+}
+
+function restart(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current = 1;
+
+  document.getElementById("slide1")
+    .classList.add("active");
+
+  updateDots();
+}
+
+function updateDots(){
+
+  document.querySelectorAll(".dot").forEach((dot,index)=>{
+    dot.classList.toggle("active",index === current-1);
+  });
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pankaj 🧡</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Segoe UI", sans-serif;
+  background:linear-gradient(135deg,#fff3e6,#ffe1d1,#fff8f0);
+  overflow:hidden;
+  color:#633b32;
+}
+
+.slide{
+  display:none;
+  min-height:100vh;
+  width:100%;
+  padding:30px 20px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation:fade .7s ease;
+}
+
+.slide.active{
+  display:flex;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:scale(.96)}
+  to{opacity:1;transform:scale(1)}
+}
+
+h1{
+  font-size:clamp(35px,10vw,65px);
+  color:#d96c4f;
+  text-shadow:0 4px 12px #e8aa923d;
+}
+
+h2{
+  color:#c75b43;
+  margin-bottom:15px;
+}
+
+p{
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* FLOATING BALLOONS */
+.balloon{
+  position:fixed;
+  width:55px;
+  height:68px;
+  border-radius:50%;
+  background:#f39b7b;
+  opacity:.8;
+  animation:float 4s ease-in-out infinite;
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:100px;
+  background:#8c6a60;
+  top:65px;
+  left:50%;
+}
+
+.b1{left:7%;top:15%;animation-delay:.2s}
+.b2{right:8%;top:20%;background:#e9b56f;animation-delay:1s}
+.b3{left:15%;bottom:12%;background:#e98791;animation-delay:1.5s}
+.b4{right:15%;bottom:15%;background:#f1c778;animation-delay:.7s}
+
+@keyframes float{
+  50%{transform:translateY(-20px) rotate(4deg)}
+}
+
+/* TEDDY */
+.teddy{
+  position:relative;
+  width:180px;
+  height:210px;
+  margin:20px auto;
+}
+
+.head{
+  position:absolute;
+  width:125px;
+  height:115px;
+  background:#b97850;
+  border-radius:50%;
+  left:28px;
+  top:25px;
+}
+
+.ear{
+  position:absolute;
+  width:45px;
+  height:45px;
+  background:#a96846;
+  border-radius:50%;
+  top:8px;
+}
+.e1{left:12px}.e2{right:12px}
+
+.eye{
+  position:absolute;
+  width:9px;
+  height:12px;
+  background:#38221d;
+  border-radius:50%;
+  top:62px;
+}
+.eye1{left:55px}.eye2{right:55px}
+
+.muzzle{
+  position:absolute;
+  width:55px;
+  height:40px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:35px;
+  top:73px;
+}
+
+.nose{
+  position:absolute;
+  width:13px;
+  height:9px;
+  background:#4b2921;
+  border-radius:50%;
+  top:84px;
+  left:56px;
+}
+
+.body{
+  position:absolute;
+  width:115px;
+  height:105px;
+  background:#b97850;
+  border-radius:50% 50% 40% 40%;
+  left:32px;
+  top:112px;
+}
+
+.belly{
+  position:absolute;
+  width:70px;
+  height:60px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:22px;
+  top:22px;
+}
+
+.heart{
+  font-size:25px;
+}
+
+/* CALENDAR */
+.calendar{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 35px #a8665426;
+  margin:20px auto;
+}
+
+.month{
+  background:#d96c4f;
+  color:white;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  padding:12px;
+  gap:6px;
+}
+
+.days span{
+  padding:7px 2px;
+  font-size:13px;
+}
+
+.mark{
+  background:#f39b7b;
+  color:white;
+  border-radius:50%;
+  font-weight:bold;
+  box-shadow:0 0 0 4px #ffe0d3;
+}
+
+/* LETTER */
+.letter{
+  max-width:600px;
+  width:94%;
+  max-height:70vh;
+  overflow:auto;
+  background:#fffaf3;
+  padding:30px 25px;
+  border-radius:8px;
+  box-shadow:0 15px 45px #7c493326;
+  border:1px solid #f0d4bd;
+  text-align:left;
+  position:relative;
+}
+
+.letter:before{
+  content:"♥";
+  position:absolute;
+  right:18px;
+  top:12px;
+  color:#e98791;
+  font-size:25px;
+}
+
+.letter h2{
+  text-align:center;
+  font-family:Georgia,serif;
+}
+
+.signature{
+  text-align:right;
+  margin-top:20px;
+  font-family:cursive;
+  color:#c75b43;
+}
+
+/* CAKE */
+.cake{
+  position:relative;
+  width:210px;
+  height:170px;
+  margin:25px auto;
+}
+
+.layer{
+  position:absolute;
+  width:190px;
+  height:55px;
+  left:10px;
+  background:#d98265;
+  border-radius:15px;
+  box-shadow:inset 0 -8px #bd654e;
+}
+
+.l1{bottom:15px}
+.l2{bottom:65px;width:165px;left:22px}
+.l3{bottom:115px;width:135px;left:37px}
+
+.candle{
+  position:absolute;
+  width:12px;
+  height:38px;
+  background:#f3b45f;
+  top:0;
+  left:99px;
+}
+
+.flame{
+  position:absolute;
+  width:18px;
+  height:25px;
+  background:#ffbd59;
+  border-radius:50% 50% 50% 0;
+  transform:rotate(-45deg);
+  top:-25px;
+  left:-3px;
+  box-shadow:0 0 18px #ffb13b;
+}
+
+/* BUTTON */
+button{
+  margin-top:25px;
+  border:none;
+  padding:13px 28px;
+  border-radius:30px;
+  background:#d96c4f;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 8px 20px #b85d4638;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  background:#c75b43;
+}
+
+.dots{
+  position:fixed;
+  bottom:18px;
+  display:flex;
+  gap:8px;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+  background:#d7aaa0;
+  border-radius:50%;
+}
+
+.dot.active{
+  background:#d96c4f;
+  transform:scale(1.3);
+}
+
+.small{
+  font-size:14px;
+  opacity:.8;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BALLOONS -->
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+
+<!-- SLIDE 1 -->
+<section class="slide active" id="slide1">
+
+  <div class="teddy">
+    <div class="ear e1"></div>
+    <div class="ear e2"></div>
+    <div class="head">
+      <div class="eye eye1"></div>
+      <div class="eye eye2"></div>
+      <div class="muzzle"></div>
+      <div class="nose"></div>
+    </div>
+    <div class="body">
+      <div class="belly">🧡</div>
+    </div>
+  </div>
+
+  <h1>Happy Birthday</h1>
+  <h2>Pankaj 🎂</h2>
+
+  <p>
+    A little surprise made<br>
+    especially for you ✨
+  </p>
+
+  <button onclick="nextSlide()">Open Your Surprise 💌</button>
+
+</section>
+
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+
+  <h2>September 8 🗓️</h2>
+
+  <div class="calendar">
+
+    <div class="month">SEPTEMBER 2026</div>
+
+    <div class="days">
+      <span>Su</span><span>Mo</span><span>Tu</span>
+      <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+
+      <span></span><span></span><span>1</span><span>2</span>
+      <span>3</span><span>4</span><span>5</span>
+
+      <span>6</span><span>7</span>
+      <span class="mark">8</span>
+      <span>9</span><span>10</span><span>11</span><span>12</span>
+
+      <span>13</span><span>14</span><span>15</span>
+      <span>16</span><span>17</span><span>18</span><span>19</span>
+
+      <span>20</span><span>21</span><span>22</span>
+      <span>23</span><span>24</span><span>25</span><span>26</span>
+
+      <span>27</span><span>28</span><span>29</span>
+      <span>30</span>
+    </div>
+
+  </div>
+
+  <h1>🎈 🎂 🎈</h1>
+
+  <p>
+    Some dates are just dates...<br>
+    and then there are dates worth remembering. 🧡
+  </p>
+
+  <button onclick="nextSlide()">There's a Letter for You 💌</button>
+
+</section>
+
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+
+  <div class="letter">
+
+    <h2>💌 A Little Birthday Letter</h2>
+
+    <p>
+      Dear Pankaj,
+      <br><br>
+
+      <b>Happy Birthday! 🎂🧡</b>
+      <br><br>
+
+      May God bless you with lots of
+      <b>love, success, happiness and peace.</b>
+      I hope this new year of your life brings
+      you countless reasons to smile and many
+      beautiful moments to remember.
+      <br><br>
+
+      Enjoy your day to the fullest because
+      today is all about <b>you.</b> ✨
+      <br><br>
+
+      And honestly, I hope we remain friends
+      forever. Thank you for being here for me.
+      I truly appreciate your presence.
+      <br><br>
+
+      Even though there is a distance between us,
+      somehow it never really feels that way.
+      It feels like we are much closer than the
+      distance says. And that's something I
+      genuinely value.
+      <br><br>
+
+      So here's to another year of your life,
+      more laughter, more dreams coming true,
+      peaceful days and a heart full of happiness.
+      🌷
+      <br><br>
+
+      Stay the wonderful person you are.
+      <br><br>
+
+      <b>Happy Birthday once again, Pankaj! 🧡</b>
+
+    </p>
+
+    <div class="signature">
+      With lots of good wishes ✨<br>
+      Always stay happy 🌷
+    </div>
+
+  </div>
+
+  <div class="cake">
+    <div class="candle"><div class="flame"></div></div>
+    <div class="layer l3"></div>
+    <div class="layer l2"></div>
+    <div class="layer l1"></div>
+  </div>
+
+  <button onclick="restart()">Replay Surprise ↻</button>
+
+</section>
+
+
+<div class="dots">
+  <div class="dot active"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<script>
+
+let current = 1;
+
+function nextSlide(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current++;
+
+  if(current > 3) current = 1;
+
+  document.getElementById("slide"+current)
+    .classList.add("active");
+
+  updateDots();
+}
+
+function restart(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current = 1;
+
+  document.getElementById("slide1")
+    .classList.add("active");
+
+  updateDots();
+}
+
+function updateDots(){
+
+  document.querySelectorAll(".dot").forEach((dot,index)=>{
+    dot.classList.toggle("active",index === current-1);
+  });
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pankaj 🧡</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Segoe UI", sans-serif;
+  background:linear-gradient(135deg,#fff3e6,#ffe1d1,#fff8f0);
+  overflow:hidden;
+  color:#633b32;
+}
+
+.slide{
+  display:none;
+  min-height:100vh;
+  width:100%;
+  padding:30px 20px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation:fade .7s ease;
+}
+
+.slide.active{
+  display:flex;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:scale(.96)}
+  to{opacity:1;transform:scale(1)}
+}
+
+h1{
+  font-size:clamp(35px,10vw,65px);
+  color:#d96c4f;
+  text-shadow:0 4px 12px #e8aa923d;
+}
+
+h2{
+  color:#c75b43;
+  margin-bottom:15px;
+}
+
+p{
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* FLOATING BALLOONS */
+.balloon{
+  position:fixed;
+  width:55px;
+  height:68px;
+  border-radius:50%;
+  background:#f39b7b;
+  opacity:.8;
+  animation:float 4s ease-in-out infinite;
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:100px;
+  background:#8c6a60;
+  top:65px;
+  left:50%;
+}
+
+.b1{left:7%;top:15%;animation-delay:.2s}
+.b2{right:8%;top:20%;background:#e9b56f;animation-delay:1s}
+.b3{left:15%;bottom:12%;background:#e98791;animation-delay:1.5s}
+.b4{right:15%;bottom:15%;background:#f1c778;animation-delay:.7s}
+
+@keyframes float{
+  50%{transform:translateY(-20px) rotate(4deg)}
+}
+
+/* TEDDY */
+.teddy{
+  position:relative;
+  width:180px;
+  height:210px;
+  margin:20px auto;
+}
+
+.head{
+  position:absolute;
+  width:125px;
+  height:115px;
+  background:#b97850;
+  border-radius:50%;
+  left:28px;
+  top:25px;
+}
+
+.ear{
+  position:absolute;
+  width:45px;
+  height:45px;
+  background:#a96846;
+  border-radius:50%;
+  top:8px;
+}
+.e1{left:12px}.e2{right:12px}
+
+.eye{
+  position:absolute;
+  width:9px;
+  height:12px;
+  background:#38221d;
+  border-radius:50%;
+  top:62px;
+}
+.eye1{left:55px}.eye2{right:55px}
+
+.muzzle{
+  position:absolute;
+  width:55px;
+  height:40px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:35px;
+  top:73px;
+}
+
+.nose{
+  position:absolute;
+  width:13px;
+  height:9px;
+  background:#4b2921;
+  border-radius:50%;
+  top:84px;
+  left:56px;
+}
+
+.body{
+  position:absolute;
+  width:115px;
+  height:105px;
+  background:#b97850;
+  border-radius:50% 50% 40% 40%;
+  left:32px;
+  top:112px;
+}
+
+.belly{
+  position:absolute;
+  width:70px;
+  height:60px;
+  background:#e7b58d;
+  border-radius:50%;
+  left:22px;
+  top:22px;
+}
+
+.heart{
+  font-size:25px;
+}
+
+/* CALENDAR */
+.calendar{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 35px #a8665426;
+  margin:20px auto;
+}
+
+.month{
+  background:#d96c4f;
+  color:white;
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  padding:12px;
+  gap:6px;
+}
+
+.days span{
+  padding:7px 2px;
+  font-size:13px;
+}
+
+.mark{
+  background:#f39b7b;
+  color:white;
+  border-radius:50%;
+  font-weight:bold;
+  box-shadow:0 0 0 4px #ffe0d3;
+}
+
+/* LETTER */
+.letter{
+  max-width:600px;
+  width:94%;
+  max-height:70vh;
+  overflow:auto;
+  background:#fffaf3;
+  padding:30px 25px;
+  border-radius:8px;
+  box-shadow:0 15px 45px #7c493326;
+  border:1px solid #f0d4bd;
+  text-align:left;
+  position:relative;
+}
+
+.letter:before{
+  content:"♥";
+  position:absolute;
+  right:18px;
+  top:12px;
+  color:#e98791;
+  font-size:25px;
+}
+
+.letter h2{
+  text-align:center;
+  font-family:Georgia,serif;
+}
+
+.signature{
+  text-align:right;
+  margin-top:20px;
+  font-family:cursive;
+  color:#c75b43;
+}
+
+/* CAKE */
+.cake{
+  position:relative;
+  width:210px;
+  height:170px;
+  margin:25px auto;
+}
+
+.layer{
+  position:absolute;
+  width:190px;
+  height:55px;
+  left:10px;
+  background:#d98265;
+  border-radius:15px;
+  box-shadow:inset 0 -8px #bd654e;
+}
+
+.l1{bottom:15px}
+.l2{bottom:65px;width:165px;left:22px}
+.l3{bottom:115px;width:135px;left:37px}
+
+.candle{
+  position:absolute;
+  width:12px;
+  height:38px;
+  background:#f3b45f;
+  top:0;
+  left:99px;
+}
+
+.flame{
+  position:absolute;
+  width:18px;
+  height:25px;
+  background:#ffbd59;
+  border-radius:50% 50% 50% 0;
+  transform:rotate(-45deg);
+  top:-25px;
+  left:-3px;
+  box-shadow:0 0 18px #ffb13b;
+}
+
+/* BUTTON */
+button{
+  margin-top:25px;
+  border:none;
+  padding:13px 28px;
+  border-radius:30px;
+  background:#d96c4f;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 8px 20px #b85d4638;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  background:#c75b43;
+}
+
+.dots{
+  position:fixed;
+  bottom:18px;
+  display:flex;
+  gap:8px;
+}
+
+.dot{
+  width:9px;
+  height:9px;
+  background:#d7aaa0;
+  border-radius:50%;
+}
+
+.dot.active{
+  background:#d96c4f;
+  transform:scale(1.3);
+}
+
+.small{
+  font-size:14px;
+  opacity:.8;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BALLOONS -->
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+
+<!-- SLIDE 1 -->
+<section class="slide active" id="slide1">
+
+  <div class="teddy">
+    <div class="ear e1"></div>
+    <div class="ear e2"></div>
+    <div class="head">
+      <div class="eye eye1"></div>
+      <div class="eye eye2"></div>
+      <div class="muzzle"></div>
+      <div class="nose"></div>
+    </div>
+    <div class="body">
+      <div class="belly">🧡</div>
+    </div>
+  </div>
+
+  <h1>Happy Birthday</h1>
+  <h2>Pankaj 🎂</h2>
+
+  <p>
+    A little surprise made<br>
+    especially for you ✨
+  </p>
+
+  <button onclick="nextSlide()">Open Your Surprise 💌</button>
+
+</section>
+
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+
+  <h2>September 8 🗓️</h2>
+
+  <div class="calendar">
+
+    <div class="month">SEPTEMBER 2026</div>
+
+    <div class="days">
+      <span>Su</span><span>Mo</span><span>Tu</span>
+      <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+
+      <span></span><span></span><span>1</span><span>2</span>
+      <span>3</span><span>4</span><span>5</span>
+
+      <span>6</span><span>7</span>
+      <span class="mark">8</span>
+      <span>9</span><span>10</span><span>11</span><span>12</span>
+
+      <span>13</span><span>14</span><span>15</span>
+      <span>16</span><span>17</span><span>18</span><span>19</span>
+
+      <span>20</span><span>21</span><span>22</span>
+      <span>23</span><span>24</span><span>25</span><span>26</span>
+
+      <span>27</span><span>28</span><span>29</span>
+      <span>30</span>
+    </div>
+
+  </div>
+
+  <h1>🎈 🎂 🎈</h1>
+
+  <p>
+    Some dates are just dates...<br>
+    and then there are dates worth remembering. 🧡
+  </p>
+
+  <button onclick="nextSlide()">There's a Letter for You 💌</button>
+
+</section>
+
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+
+  <div class="letter">
+
+    <h2>💌 A Little Birthday Letter</h2>
+
+    <p>
+      Dear Pankaj,
+      <br><br>
+
+      <b>Happy Birthday! 🎂🧡</b>
+      <br><br>
+
+      May God bless you with lots of
+      <b>love, success, happiness and peace.</b>
+      I hope this new year of your life brings
+      you countless reasons to smile and many
+      beautiful moments to remember.
+      <br><br>
+
+      Enjoy your day to the fullest because
+      today is all about <b>you.</b> ✨
+      <br><br>
+
+      And honestly, I hope we remain friends
+      forever. Thank you for being here for me.
+      I truly appreciate your presence.
+      <br><br>
+
+      Even though there is a distance between us,
+      somehow it never really feels that way.
+      It feels like we are much closer than the
+      distance says. And that's something I
+      genuinely value.
+      <br><br>
+
+      So here's to another year of your life,
+      more laughter, more dreams coming true,
+      peaceful days and a heart full of happiness.
+      🌷
+      <br><br>
+
+      Stay the wonderful person you are.
+      <br><br>
+
+      <b>Happy Birthday once again, Pankaj! 🧡</b>
+
+    </p>
+
+    <div class="signature">
+      With lots of good wishes ✨<br>
+      Always stay happy 🌷
+    </div>
+
+  </div>
+
+  <div class="cake">
+    <div class="candle"><div class="flame"></div></div>
+    <div class="layer l3"></div>
+    <div class="layer l2"></div>
+    <div class="layer l1"></div>
+  </div>
+
+  <button onclick="restart()">Replay Surprise ↻</button>
+
+</section>
+
+
+<div class="dots">
+  <div class="dot active"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<script>
+
+let current = 1;
+
+function nextSlide(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current++;
+
+  if(current > 3) current = 1;
+
+  document.getElementById("slide"+current)
+    .classList.add("active");
+
+  updateDots();
+}
+
+function restart(){
+
+  document.getElementById("slide"+current)
+    .classList.remove("active");
+
+  current = 1;
+
+  document.getElementById("slide1")
+    .classList.add("active");
+
+  updateDots();
+}
+
+function updateDots(){
+
+  document.querySelectorAll(".dot").forEach((dot,index)=>{
+    dot.classList.toggle("active",index === current-1);
+  });
+
+}
+
+</script>
+
+</body>
+</html>
